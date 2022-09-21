@@ -1,0 +1,21 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 948483825328-ch84b5is9c92pjou1kplvur65mkt6ss9.apps.googleusercontent.com
+            clientSecret: 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
+  datasource:
+    password: spring_aplicacion
+    url: jdbc:postgresql://db.ujvanvzryyslblidgkdh.supabase.co:5432/postgres
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  mvc:
+    format:
+      date: yyyy-MM-dd
